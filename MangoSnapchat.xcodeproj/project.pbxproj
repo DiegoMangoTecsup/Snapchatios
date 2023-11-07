@@ -9,23 +9,28 @@
 /* Begin PBXBuildFile section */
 		468960972AFAEC5300576432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468960962AFAEC5300576432 /* AppDelegate.swift */; };
 		468960992AFAEC5300576432 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468960982AFAEC5300576432 /* SceneDelegate.swift */; };
-		4689609B2AFAEC5300576432 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4689609A2AFAEC5300576432 /* ViewController.swift */; };
+		4689609B2AFAEC5300576432 /* inicarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4689609A2AFAEC5300576432 /* inicarSesionViewController.swift */; };
 		4689609E2AFAEC5300576432 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4689609C2AFAEC5300576432 /* Main.storyboard */; };
 		468960A12AFAEC5300576432 /* MangoSnapchat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4689609F2AFAEC5300576432 /* MangoSnapchat.xcdatamodeld */; };
 		468960A32AFAEC5800576432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468960A22AFAEC5800576432 /* Assets.xcassets */; };
 		468960A62AFAEC5800576432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468960A42AFAEC5800576432 /* LaunchScreen.storyboard */; };
+		468960AE2AFAEFD800576432 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 468960AD2AFAEFD700576432 /* GoogleService-Info.plist */; };
+		468960B12AFAF38900576432 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 468960B02AFAF38900576432 /* FirebaseAnalytics */; };
+		468960B32AFAF38900576432 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 468960B22AFAF38900576432 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		468960B52AFAF38900576432 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 468960B42AFAF38900576432 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		468960932AFAEC5300576432 /* MangoSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468960962AFAEC5300576432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		468960982AFAEC5300576432 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4689609A2AFAEC5300576432 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4689609A2AFAEC5300576432 /* inicarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inicarSesionViewController.swift; sourceTree = "<group>"; };
 		4689609D2AFAEC5300576432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		468960A02AFAEC5300576432 /* MangoSnapchat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MangoSnapchat.xcdatamodel; sourceTree = "<group>"; };
 		468960A22AFAEC5800576432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		468960A52AFAEC5800576432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		468960A72AFAEC5800576432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		468960AD2AFAEFD700576432 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468960B12AFAF38900576432 /* FirebaseAnalytics in Frameworks */,
+				468960B52AFAF38900576432 /* FirebaseAuth in Frameworks */,
+				468960B32AFAF38900576432 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +66,10 @@
 		468960952AFAEC5300576432 /* MangoSnapchat */ = {
 			isa = PBXGroup;
 			children = (
+				468960AD2AFAEFD700576432 /* GoogleService-Info.plist */,
 				468960962AFAEC5300576432 /* AppDelegate.swift */,
 				468960982AFAEC5300576432 /* SceneDelegate.swift */,
-				4689609A2AFAEC5300576432 /* ViewController.swift */,
+				4689609A2AFAEC5300576432 /* inicarSesionViewController.swift */,
 				4689609C2AFAEC5300576432 /* Main.storyboard */,
 				468960A22AFAEC5800576432 /* Assets.xcassets */,
 				468960A42AFAEC5800576432 /* LaunchScreen.storyboard */,
@@ -86,6 +95,11 @@
 			dependencies = (
 			);
 			name = MangoSnapchat;
+			packageProductDependencies = (
+				468960B02AFAF38900576432 /* FirebaseAnalytics */,
+				468960B22AFAF38900576432 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				468960B42AFAF38900576432 /* FirebaseAuth */,
+			);
 			productName = MangoSnapchat;
 			productReference = 468960932AFAEC5300576432 /* MangoSnapchat.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 4689608A2AFAEC5300576432;
+			packageReferences = (
+				468960AF2AFAF38900576432 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 468960942AFAEC5300576432 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				468960A62AFAEC5800576432 /* LaunchScreen.storyboard in Resources */,
+				468960AE2AFAEFD800576432 /* GoogleService-Info.plist in Resources */,
 				468960A32AFAEC5800576432 /* Assets.xcassets in Resources */,
 				4689609E2AFAEC5300576432 /* Main.storyboard in Resources */,
 			);
@@ -141,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4689609B2AFAEC5300576432 /* ViewController.swift in Sources */,
+				4689609B2AFAEC5300576432 /* inicarSesionViewController.swift in Sources */,
 				468960972AFAEC5300576432 /* AppDelegate.swift in Sources */,
 				468960A12AFAEC5300576432 /* MangoSnapchat.xcdatamodeld in Sources */,
 				468960992AFAEC5300576432 /* SceneDelegate.swift in Sources */,
@@ -360,6 +378,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		468960AF2AFAF38900576432 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		468960B02AFAF38900576432 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 468960AF2AFAF38900576432 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		468960B22AFAF38900576432 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 468960AF2AFAF38900576432 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		468960B42AFAF38900576432 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 468960AF2AFAF38900576432 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4689609F2AFAEC5300576432 /* MangoSnapchat.xcdatamodeld */ = {
